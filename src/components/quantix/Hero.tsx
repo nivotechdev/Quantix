@@ -23,7 +23,7 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            Transformamos Cliques em Clientes e Dados em Crescimento Real.
+            Transformamos Cliques em Clientes e <span className="text-primary">Dados em Crescimento Real.</span>
           </h1>
           <div className="mt-10">
             <Button size="lg" asChild>
