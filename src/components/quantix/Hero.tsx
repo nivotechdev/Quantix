@@ -25,9 +25,6 @@ export function Hero() {
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
             Transformamos Cliques em Clientes e Dados em Crescimento Real.
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-            A Quantix é sua parceira estratégica para escalar seu negócio com marketing de performance, inteligência de dados e tecnologia.
-          </p>
           <div className="mt-10">
             <Button size="lg" asChild>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">

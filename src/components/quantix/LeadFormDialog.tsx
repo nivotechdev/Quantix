@@ -9,7 +9,6 @@ import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -64,9 +63,6 @@ export function LeadFormDialog({ children }: { children: React.ReactNode }) {
       <DialogContent className="sm:max-w-[425px] bg-card border-border">
         <DialogHeader>
           <DialogTitle className="font-headline">Fale com um especialista</DialogTitle>
-          <DialogDescription>
-            Preencha o formulário abaixo e nossa equipe entrará em contato em breve.
-          </DialogDescription>
         </DialogHeader>
         <form action={formAction}>
           <div className="grid gap-4 py-4">

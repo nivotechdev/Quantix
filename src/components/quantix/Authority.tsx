@@ -11,14 +11,10 @@ export function Authority() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Marketing Pensado para Vender. Estratégia Antes de Anúncios.</h2>
-            <p className="text-lg text-foreground/80">
-              Nossa filosofia é simples: entendemos seu negócio a fundo para criar estratégias que geram resultados reais e mensuráveis. Acreditamos que o sucesso vem da união entre criatividade e análise de dados.
-            </p>
           </div>
           <div>
             <Card>
-              <CardContent className="p-6">
-                <p className="text-center font-semibold text-foreground/70 mb-6">Empresas que confiam em nosso trabalho (placeholder)</p>
+              <CardContent className="p-8">
                 <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
                   {clientLogos.map(logo => (
                     <div key={logo.id} className="flex justify-center">

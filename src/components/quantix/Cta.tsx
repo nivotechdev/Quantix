@@ -10,9 +10,6 @@ export function Cta() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-gradient-to-r from-secondary to-blue-950/50 rounded-lg p-8 md:p-16 text-center shadow-2xl">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-white">Pronto para Elevar seu Negócio ao Próximo Nível?</h2>
-          <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-            Vamos conversar sobre seus desafios e construir um plano de ação para o crescimento da sua empresa. A oportunidade está a um clique de distância.
-          </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" className="w-full sm:w-auto" asChild>
                <a href={WHATSAPP_LINK_GROW} target="_blank" rel="noopener noreferrer">

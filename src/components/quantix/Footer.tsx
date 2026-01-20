@@ -13,7 +13,6 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <QuantixLogo />
-            <p className="mt-2 text-sm text-foreground/70">Parceiros estratégicos para o seu crescimento.</p>
           </div>
           <div className="flex items-center gap-4">
             <a href="#services" className="text-sm hover:text-primary transition-colors">Serviços</a>
