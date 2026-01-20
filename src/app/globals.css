@@ -13,8 +13,8 @@
     --popover: 0 0% 13.3%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 180 100% 50%; /* #00FFFF Neon Cyan */
-    --primary-foreground: 0 0% 8%; /* Dark text for contrast on neon */
+    --primary: 217 91% 60%; /* Vivid Blue */
+    --primary-foreground: 0 0% 98%; /* Light text for contrast */
 
     --secondary: 222.9 52.8% 21.8%; /* #192A56 Navy Blue */
     --secondary-foreground: 0 0% 98%;
@@ -30,11 +30,11 @@
 
     --border: 0 0% 22%;
     --input: 0 0% 22%;
-    --ring: 180 100% 50%;
+    --ring: 217 91% 60%;
 
     --radius: 0.5rem;
     
-    --chart-1: 180 100% 50%;
+    --chart-1: 217 91% 60%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
@@ -43,12 +43,12 @@
     /* Sidebar - keeping it consistent with the main theme */
     --sidebar-background: 0 0% 13.3%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 180 100% 50%;
-    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 0 0% 25%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 22%;
-    --sidebar-ring: 180 100% 50%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
