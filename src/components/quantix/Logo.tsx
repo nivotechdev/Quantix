@@ -9,12 +9,12 @@ export function QuantixLogo({ className }: { className?: string }) {
         alt="Quantix Logo" 
         width={140} 
         height={140} 
-        className="h-18 w-auto md:h-24"
+        className="h-14 w-auto md:h-20"
         priority
       />
-      <div className="flex flex-col justify-center -ml-4 md:-ml-6">
-        <div className="text-2xl font-bold font-headline text-white md:text-4xl">Quantix</div>
-        <p className="-mt-1 text-[9px] font-light tracking-widest text-muted-foreground/80 md:-mt-1.5 md:text-[10px]">
+      <div className="flex flex-col justify-center -ml-4 md:-ml-5">
+        <div className="text-2xl font-bold font-headline text-white md:text-3xl">Quantix</div>
+        <p className="-mt-1 text-[9px] font-light tracking-widest text-muted-foreground/80 md:text-[10px]">
           AGÊNCIA DE MARKETING
         </p>
       </div>
