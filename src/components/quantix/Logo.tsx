@@ -12,7 +12,7 @@ export function QuantixLogo({ className }: { className?: string }) {
         className="h-16 w-auto md:h-20"
         priority
       />
-      <div className="flex flex-col justify-center -ml-[15px]">
+      <div className="flex flex-col justify-center -ml-[9px]">
         <span className="text-2xl md:text-3xl font-bold font-headline text-white">Quantix</span>
         <span className="text-[9px] md:text-[10px] font-light tracking-wider text-muted-foreground/80 -mt-1 whitespace-nowrap">
           AGÊNCIA DE MARKETING
