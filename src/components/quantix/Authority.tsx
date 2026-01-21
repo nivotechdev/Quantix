@@ -75,37 +75,31 @@ export function Authority() {
         </p>
         
         <FadeIn delay={400}>
-          <div className="mt-20">
-            <div className="flex flex-col items-center justify-center text-center gap-2 mb-12">
-                <div className="flex items-center gap-3">
-                    <div className="hidden md:flex h-5 items-center gap-0.5">
-                        <div className="w-0.5 h-full rounded-full bg-primary/50" />
-                        <div className="w-0.5 h-2/3 rounded-full bg-primary/50" />
-                        <div className="w-0.5 h-full rounded-full bg-primary/50" />
-                        <div className="w-0.5 h-1/3 rounded-full bg-primary/50" />
-                        <div className="w-0.5 h-full rounded-full bg-primary/50" />
-                    </div>
-                    <p className="text-muted-foreground tracking-wider">Empresas que confiam e crescem com a Quantix</p>
-                </div>
-                <p className="text-sm text-muted-foreground/60 -mt-2">
+          <div className="mt-28">
+            <div className="text-center mb-16">
+                <h3 className="font-headline text-3xl md:text-4xl font-light text-white/90 tracking-wide">
+                    Empresas que confiam e crescem com a <span className="font-bold text-white">Quantix</span>
+                </h3>
+                <p className="mt-2 text-base font-light text-muted-foreground">
                     Mais de 50 operações escaladas com segurança e previsibilidade.
                 </p>
             </div>
 
             <div 
               className="relative w-full overflow-hidden"
-              style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'}}
+              style={{ maskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent)'}}
             >
+              <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-48 bg-primary/5 blur-3xl opacity-50"></div>
               <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
                 {[...clientLogos, ...clientLogos].map((logo, i) => (
-                  <div key={`${logo.id}-${i}`} className="flex-shrink-0 px-12 h-20 flex justify-center items-center">
+                  <div key={`${logo.id}-${i}`} className="flex-shrink-0 px-12 h-28 flex justify-center items-center">
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
-                      width={150}
-                      height={40}
+                      width={160}
+                      height={64}
                       data-ai-hint={logo.imageHint}
-                      className="object-contain max-h-10 w-auto grayscale brightness-150 transition-all duration-400 hover:grayscale-0 hover:brightness-100 hover:scale-110 hover:drop-shadow-[0_0_10px_hsl(var(--primary)/0.5)]"
+                      className="object-contain h-16 w-auto grayscale brightness-150 transition-all duration-400 hover:grayscale-0 hover:brightness-100 hover:scale-115 hover:drop-shadow-[0_0_15px_hsl(var(--primary)/0.4)]"
                     />
                   </div>
                 ))}
