@@ -7,11 +7,34 @@ import { AnimatedNumber } from "./AnimatedNumber";
 const clientLogos = PlaceHolderImages.filter(p => p.id.startsWith('client-logo-'));
 
 const stats = [
-  { value: 70, prefix: "+", suffix: "%", label: "Aumento em Geração de Leads" },
-  { value: 2.5, prefix: "", suffix: "x", label: "Retorno Sobre Investimento" },
-  { value: 98, prefix: "", suffix: "%", label: "de Satisfação dos Clientes" },
+  { value: 70, prefix: "+", suffix: "% em Geração de Leads", description: "Média de escala alcançada através da otimização de funis quânticos." },
+  { value: 3.5, prefix: "", suffix: "x ROI Médio", description: "Retorno sobre investimento publicitário projetado para operações de alta performance." },
+  { value: 98, prefix: "", suffix: "% de Satisfaction Score", description: "Índice de fidelidade baseado no sucesso contínuo dos nossos parceiros." },
 ];
 
+const StatChart = () => (
+    <svg
+      viewBox="0 0 200 100"
+      preserveAspectRatio="none"
+      className="absolute inset-0 w-full h-full opacity-10"
+    >
+      <path
+        d="M 20 80 C 60 10, 100 90, 140 40, 180 70, 180 70, 180 70"
+        stroke="hsl(var(--muted-foreground))"
+        strokeWidth="2"
+        fill="none"
+        vectorEffect="non-scaling-stroke"
+      />
+      <circle cx="180" cy="70" r="3" fill="hsl(var(--primary))">
+        <animate
+          attributeName="r"
+          values="3;5;3"
+          dur="1.5s"
+          repeatCount="indefinite"
+        />
+      </circle>
+    </svg>
+  );
 
 export function Authority() {
   return (
@@ -25,25 +48,34 @@ export function Authority() {
         </MaskReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 text-center">
-            {stats.map((stat) => {
+            {stats.map((stat, index) => {
               const isFloat = stat.value % 1 !== 0;
               return (
-              <FadeIn key={stat.label} delay={200}>
-                <div>
-                  <p className="text-5xl md:text-6xl font-bold font-headline text-white">
-                    {stat.prefix}
-                    <AnimatedNumber value={stat.value} isFloat={isFloat} />
-                    <span className="text-primary">{stat.suffix}</span>
-                  </p>
-                  <p className="mt-2 text-muted-foreground">{stat.label}</p>
+              <FadeIn key={stat.label} delay={index * 200}>
+                <div className="relative h-full p-8 rounded-lg bg-card/30 backdrop-blur-sm border border-border/30 overflow-hidden">
+                    <div className="absolute -top-8 -left-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl animate-pulse-subtle"></div>
+                    <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl animate-pulse-subtle" style={{ animationDelay: '500ms' }}></div>
+                    <StatChart />
+                    <div className="relative z-10 flex flex-col justify-center h-full">
+                        <p className="text-4xl md:text-5xl font-bold font-headline text-white">
+                            {stat.prefix}
+                            <AnimatedNumber value={stat.value} isFloat={isFloat} />
+                            <span className="text-primary">{stat.suffix}</span>
+                        </p>
+                        <p className="mt-4 text-sm text-muted-foreground h-10">{stat.description}</p>
+                    </div>
                 </div>
               </FadeIn>
               )
             })}
         </div>
+
+        <p className="mt-12 text-center text-xs text-muted-foreground/50">
+            Benchmarks baseados em modelos estatísticos de performance interna.
+        </p>
         
         <FadeIn delay={400}>
-          <div className="mt-24">
+          <div className="mt-12">
             <p className="text-center text-muted-foreground mb-8">Empresas que confiam e crescem com a Quantix</p>
             <div 
               className="relative w-full overflow-hidden py-4"
