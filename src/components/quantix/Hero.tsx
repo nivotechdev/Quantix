@@ -1,26 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import Image from "next/image";
 
-const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
+const VIDEO_URL = "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/sign/AgenciaQuantix/Create_a_continuous_202601202152_gu3z8.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9jOWY1OGE2Ni03MDFhLTRhNDQtOWJhZC0zOGRkNmVkYTNhODAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBZ2VuY2lhUXVhbnRpeC9DcmVhdGVfYV9jb250aW51b3VzXzIwMjYwMTIwMjE1Ml9ndTN6OC5tcDQiLCJpYXQiOjE3Njg5NTcxNTYsImV4cCI6MjA4NDMxNzE1Nn0.P8zCbK6JDKLUAhjLAJeoz2bmz9NXS3FSEOBf4HqTKXY";
 const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20Quantix.";
 
 export function Hero() {
   return (
     <section className="relative h-[90vh] min-h-[700px] flex items-center justify-center text-center text-white overflow-hidden">
-      {heroImage ? (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          data-ai-hint={heroImage.imageHint}
-          priority
-        />
-      ) : (
-        <div className="absolute inset-0 bg-secondary" />
-      )}
+      <video
+        src={VIDEO_URL}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-background" />
       <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
