@@ -9,7 +9,7 @@ export function QuantixLogo({ className }: { className?: string }) {
         alt="Quantix Logo" 
         width={200} 
         height={200} 
-        className="h-16 w-auto md:h-24"
+        className="h-[4.3125rem] w-auto md:h-[6.3125rem]"
       />
       <div>
         <div className="text-2xl font-bold font-headline text-white md:text-4xl">Quantix</div>
