@@ -1,25 +1,25 @@
-import { ClipboardEdit, LineChart, Cpu, Users } from "lucide-react";
+import { Rocket, TrendingUp, BarChart4, ShieldCheck } from "lucide-react";
 import { FadeIn } from "./FadeIn";
 import { MaskReveal } from "./MaskReveal";
 
 const differentiators = [
   {
-    icon: <ClipboardEdit className="h-8 w-8 text-primary" />,
+    icon: <Rocket className="h-8 w-8 text-primary" />,
     title: "Estratégias Personalizadas",
     description: "Nenhuma solução de prateleira. Mergulhamos no seu negócio para criar um plano único.",
   },
   {
-    icon: <LineChart className="h-8 w-8 text-primary" />,
+    icon: <TrendingUp className="h-8 w-8 text-primary" />,
     title: "Foco em ROI e Crescimento",
     description: "Cada ação é medida e otimizada. Nosso sucesso é o crescimento dos seus números.",
   },
   {
-    icon: <Cpu className="h-8 w-8 text-primary" />,
+    icon: <BarChart4 className="h-8 w-8 text-primary" />,
     title: "Uso de Tecnologia e Dados",
     description: "Usamos as melhores ferramentas e análise de dados para tomar decisões inteligentes.",
   },
   {
-    icon: <Users className="h-8 w-8 text-primary" />,
+    icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: "Atendimento Consultivo",
     description: "Somos uma extensão da sua equipe, com transparência total e comunicação clara.",
   },
@@ -27,8 +27,8 @@ const differentiators = [
 
 export function Differentiators() {
   return (
-    <section className="py-20 md:py-28 bg-card">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="py-20 md:py-28 bg-card has-growth-vectors">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <MaskReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Mais que uma Agência, um Parceiro Estratégico</h2>

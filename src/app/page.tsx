@@ -5,6 +5,7 @@ import { Differentiators } from "@/components/quantix/Differentiators";
 import { Authority } from "@/components/quantix/Authority";
 import { Cta } from "@/components/quantix/Cta";
 import { Footer } from "@/components/quantix/Footer";
+import { SectionDivider } from "@/components/quantix/SectionDivider";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Services />
         <Differentiators />
         <Authority />
+        <SectionDivider />
         <Cta />
       </main>
       <Footer />

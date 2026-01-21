@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Rocket, ShieldCheck, Zap } from "lucide-react";
 import { LeadFormDialog } from "./LeadFormDialog";
 import { FadeIn } from "./FadeIn";
 
@@ -26,7 +26,7 @@ export function Cta() {
                 asChild
               >
                  <a href={WHATSAPP_LINK_GROW} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" />
+                  <Rocket className="mr-2 h-5 w-5 button-icon-rocket" />
                   Quero Crescer Meu Negócio
                  </a>
               </Button>

@@ -9,7 +9,7 @@ export function QuantixLogo({ className }: { className?: string }) {
         alt="Quantix Logo" 
         width={160} 
         height={160} 
-        className="h-[74px] w-auto md:h-[90px]"
+        className="h-[74px] w-auto md:h-[90px] quantix-icon"
         priority
       />
       <div className="flex flex-col justify-center -ml-[12px]">

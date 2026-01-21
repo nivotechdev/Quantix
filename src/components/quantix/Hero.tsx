@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Rocket } from "lucide-react";
 
 const VIDEO_URL = "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/sign/AgenciaQuantix/videofundo.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9jOWY1OGE2Ni03MDFhLTRhNDQtOWJhZC0zOGRkNmVkYTNhODAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBZ2VuY2lhUXVhbnRpeC92aWRlb2Z1bmRvLm1wNCIsImlhdCI6MTc2OTAyMjg0OSwiZXhwIjoyMDg0MzgyODQ5fQ.LsIfnUKBKuK3FEnoDw68iQ6XyOcqD3XI9Q9wW6evIxA";
 const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20Quantix.";
@@ -26,6 +26,7 @@ export function Hero() {
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Fale com um Especialista
+                <Rocket className="ml-2 h-5 w-5 button-icon-rocket" />
               </a>
             </Button>
           </div>
