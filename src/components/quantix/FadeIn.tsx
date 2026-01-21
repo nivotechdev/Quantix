@@ -7,9 +7,10 @@ type FadeInProps = {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+  direction?: 'up' | 'down';
 };
 
-export function FadeIn({ children, className, delay = 0 }: FadeInProps) {
+export function FadeIn({ children, className, delay = 0, direction = 'up' }: FadeInProps) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -44,8 +45,11 @@ export function FadeIn({ children, className, delay = 0 }: FadeInProps) {
       className={cn(
         "transition-all duration-1000 ease-out transform-gpu",
         isVisible
-          ? "opacity-100 translate-y-0 scale-100 rotate-0"
-          : "opacity-0 translate-y-8 scale-95 rotate-1",
+          ? "opacity-100 translate-y-0 scale-100"
+          : cn(
+            "opacity-0 scale-95",
+            direction === 'up' ? "translate-y-12" : "-translate-y-12"
+          ),
         className
       )}
       style={{ transitionDelay: `${delay}ms` }}

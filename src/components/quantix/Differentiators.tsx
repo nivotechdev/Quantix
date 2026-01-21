@@ -37,12 +37,12 @@ export function Differentiators() {
         </MaskReveal>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {differentiators.map((item, index) => (
-            <FadeIn key={item.title} delay={index * 100}>
-                <div className="h-full flex items-start gap-6 p-8 bg-background rounded-lg transition-all duration-300 border border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transform hover:-translate-y-2">
-                  <div className="flex-shrink-0 mt-1">{item.icon}</div>
+            <FadeIn key={item.title} delay={index * 150} direction={index % 2 === 0 ? 'down' : 'up'}>
+                <div className="h-full flex items-start gap-6 p-8 bg-secondary/20 backdrop-blur-sm rounded-lg transition-all duration-300 border border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transform hover:-translate-y-2">
+                  <div className="flex-shrink-0 mt-1 animate-float">{item.icon}</div>
                   <div>
-                    <h3 className="text-xl font-headline font-semibold">{item.title}</h3>
-                    <p className="mt-2 text-muted-foreground">{item.description}</p>
+                    <h3 className="text-xl font-headline font-semibold text-white">{item.title}</h3>
+                    <p className="mt-2 text-foreground/70">{item.description}</p>
                   </div>
                 </div>
             </FadeIn>
