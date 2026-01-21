@@ -11,23 +11,30 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 bg-[rgba(10,10,10,0.8)] backdrop-blur-[15px] border-b border-primary/10 transition-all duration-300 h-[70px] md:h-[90px]"
+        "fixed top-0 left-0 right-0 z-50 bg-black/85 backdrop-blur-[20px] border-b border-primary/15"
       )}
     >
-      <div className="container mx-auto flex items-center justify-between h-full px-4">
-        <QuantixLogo />
+      <div className="container mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-2">
+        {/* Brand Block */}
+        <div className="flex items-center">
+          <QuantixLogo />
+        </div>
         
-        <Button 
-            asChild 
-            className="flex-shrink-0 rounded-lg bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] transition-all duration-300 uppercase font-bold tracking-wider 
-            text-[12px] h-9 px-3
-            md:text-sm md:h-11 md:px-5"
-        >
-          <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-            <MessageCircle className="mr-2 h-4 w-4 shrink-0" />
-            <span className="whitespace-nowrap">Fale com um Especialista</span>
-          </a>
-        </Button>
+        {/* Action Button */}
+        <div className="flex-shrink-0">
+            <Button 
+                asChild 
+                style={{ borderRadius: '12px' }}
+                className="bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] transition-all duration-300 uppercase font-semibold tracking-wider 
+                text-[12px] h-9 px-4
+                md:text-sm md:h-11 md:px-6"
+            >
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-4 w-4 shrink-0" />
+                <span className="whitespace-nowrap">FALE COM UM ESPECIALISTA</span>
+              </a>
+            </Button>
+        </div>
       </div>
     </header>
   );
