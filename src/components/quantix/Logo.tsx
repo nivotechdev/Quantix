@@ -14,7 +14,7 @@ export function QuantixLogo({ className }: { className?: string }) {
       />
       <div className="flex flex-col justify-center -ml-[12px]">
         <span className="text-2xl md:text-3xl font-bold font-headline text-white">Quantix</span>
-        <span className="text-[9px] md:text-[10px] font-light tracking-wider text-muted-foreground/80 -mt-1 whitespace-nowrap">
+        <span className="text-[8px] md:text-[10px] font-light tracking-wider text-muted-foreground/80 -mt-1">
           AGÊNCIA DE MARKETING
         </span>
       </div>
