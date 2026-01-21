@@ -60,3 +60,47 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Glowing Orbs */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.1;
+    will-change: transform;
+    pointer-events: none;
+  }
+
+  .orb-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, hsl(var(--primary)) 0%, transparent 70%);
+    animation: move-orb-1 35s infinite alternate ease-in-out;
+  }
+
+  .orb-2 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, hsl(var(--primary)) 0%, transparent 80%);
+    animation: move-orb-2 40s infinite alternate-reverse ease-in-out;
+  }
+
+  @keyframes move-orb-1 {
+    from {
+      transform: translate(10vw, -15vh) scale(1);
+    }
+    to {
+      transform: translate(70vw, 90vh) scale(1.2);
+    }
+  }
+
+  @keyframes move-orb-2 {
+    from {
+      transform: translate(80vw, 90vh) scale(1.1);
+    }
+    to {
+      transform: translate(20vw, 5vh) scale(0.9);
+    }
+  }
+}

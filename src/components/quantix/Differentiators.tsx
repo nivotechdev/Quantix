@@ -1,5 +1,6 @@
 import { ClipboardEdit, LineChart, Cpu, Users } from "lucide-react";
 import { FadeIn } from "./FadeIn";
+import { MaskReveal } from "./MaskReveal";
 
 const differentiators = [
   {
@@ -28,22 +29,22 @@ export function Differentiators() {
   return (
     <section className="py-20 md:py-28 bg-card">
       <div className="container mx-auto px-4 md:px-6">
-        <FadeIn>
+        <MaskReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Mais que uma Agência, um Parceiro Estratégico</h2>
             <p className="mt-4 text-lg text-muted-foreground">Entendemos seus desafios e trabalhamos lado a lado para superar suas metas.</p>
           </div>
-        </FadeIn>
+        </MaskReveal>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {differentiators.map((item, index) => (
             <FadeIn key={item.title} delay={index * 100}>
-              <div className="flex items-start gap-6 p-8 bg-background rounded-lg hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 transform hover:-translate-y-1 border border-transparent hover:border-border">
-                <div className="flex-shrink-0 mt-1">{item.icon}</div>
-                <div>
-                  <h3 className="text-xl font-headline font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-muted-foreground">{item.description}</p>
+                <div className="h-full flex items-start gap-6 p-8 bg-background rounded-lg transition-all duration-300 border border-border hover:border-primary/50">
+                  <div className="flex-shrink-0 mt-1">{item.icon}</div>
+                  <div>
+                    <h3 className="text-xl font-headline font-semibold">{item.title}</h3>
+                    <p className="mt-2 text-muted-foreground">{item.description}</p>
+                  </div>
                 </div>
-              </div>
             </FadeIn>
           ))}
         </div>

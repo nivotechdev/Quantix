@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Target, MonitorSmartphone, BrainCircuit, Bot } from "lucide-react";
 import { FadeIn } from "./FadeIn";
+import { MaskReveal } from "./MaskReveal";
 
 const services = [
   {
@@ -29,12 +30,12 @@ export function Services() {
   return (
     <section id="services" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <FadeIn>
+        <MaskReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Nossas Soluções para o seu Crescimento</h2>
             <p className="mt-4 text-lg text-muted-foreground">Focamos em estratégias que geram resultados mensuráveis e impulsionam o seu negócio.</p>
           </div>
-        </FadeIn>
+        </MaskReveal>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <FadeIn key={index} delay={index * 100}>

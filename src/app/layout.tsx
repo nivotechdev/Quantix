@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
+import { ScrollProgressBar } from '@/components/quantix/ScrollProgressBar';
 
 export const metadata: Metadata = {
   title: 'Agência Quantix | Marketing Estratégico para Crescimento',
@@ -20,6 +21,11 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased bg-background">
+        <ScrollProgressBar />
+        <div className="fixed top-0 left-0 w-screen h-screen overflow-hidden -z-10">
+          <div className="orb orb-1"></div>
+          <div className="orb orb-2"></div>
+        </div>
         {children}
         <Toaster />
       </body>
