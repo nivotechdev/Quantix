@@ -14,10 +14,10 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 bg-black/85 backdrop-blur-[20px] border-b border-primary/15"
       )}
     >
-      <div className="container mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-2">
+      <div className="container mx-auto flex items-center justify-between gap-2.5 px-5 h-[90px] md:h-[100px]">
         {/* Brand Block */}
-        <div className="flex items-center">
-          <QuantixLogo />
+        <div className="flex items-center flex-1 min-w-0">
+          <QuantixLogo className="h-full max-h-[60px] md:max-h-[70px]"/>
         </div>
         
         {/* Action Button */}
@@ -25,13 +25,13 @@ export function Header() {
             <Button 
                 asChild 
                 style={{ borderRadius: '12px' }}
-                className="bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] transition-all duration-300 uppercase font-semibold tracking-wider 
-                text-[12px] h-9 px-4
+                className="w-fit bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] transition-all duration-300 uppercase font-semibold tracking-wider 
+                text-[11px] h-9 px-3
                 md:text-sm md:h-11 md:px-6"
             >
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-4 w-4 shrink-0" />
-                <span className="whitespace-nowrap">FALE COM UM ESPECIALISTA</span>
+                <MessageCircle className="hidden md:block mr-2 h-4 w-4 shrink-0" />
+                <span className="whitespace-nowrap">Fale com um Especialista</span>
               </a>
             </Button>
         </div>
