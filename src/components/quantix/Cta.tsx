@@ -6,10 +6,11 @@ const WHATSAPP_LINK_GROW = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero
 
 export function Cta() {
   return (
-    <section className="py-20 md:py-32 bg-card">
+    <section className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-gradient-to-r from-secondary to-blue-950/50 rounded-lg p-8 md:p-16 text-center shadow-2xl">
+        <div className="bg-card rounded-xl p-8 md:p-16 text-center shadow-2xl border border-border">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-white">Pronto para Elevar seu Negócio ao Próximo Nível?</h2>
+          <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">Vamos conversar sobre como podemos aplicar nossa expertise para acelerar seus resultados.</p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" className="w-full sm:w-auto" asChild>
                <a href={WHATSAPP_LINK_GROW} target="_blank" rel="noopener noreferrer">
