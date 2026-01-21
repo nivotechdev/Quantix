@@ -26,11 +26,11 @@ export function Header() {
         isScrolled ? "bg-background/90 backdrop-blur-lg border-b border-border" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-5 md:h-20 md:px-6">
-        <QuantixLogo />
-        <Button asChild className="h-9 px-3 text-xs md:h-10 md:px-4 md:text-sm">
+      <div className="container mx-auto flex h-20 items-center justify-between px-5 md:h-24">
+        <QuantixLogo className="max-h-[80%]"/>
+        <Button asChild className="h-9 px-2 text-xs md:h-10 md:px-4 md:text-sm">
           <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-            <MessageCircle className="h-4 w-4" />
+            <MessageCircle className="mr-1 h-4 w-4" />
             <span>Fale com um Especialista</span>
           </a>
         </Button>
