@@ -1,7 +1,5 @@
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram, Calendar, MessageCircle, FileText } from "lucide-react";
 import { QuantixLogo } from "./Logo";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
 import { FadeIn } from "./FadeIn";
 
 const navLinks = {
@@ -90,7 +88,7 @@ export function Footer() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                   </span>
-                  <span className="text-xs text-foreground/60">System Status: Active</span>
+                  <span className="text-xs text-foreground/60">Status da Rede: Online</span>
                 </div>
               </div>
             </div>
@@ -99,22 +97,29 @@ export function Footer() {
 
         <FadeIn delay={400}>
           <div className="mt-16 pt-12 border-t border-border/20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
               <div>
-                <h3 className="font-headline text-lg font-semibold text-white">Assine nossa Inteligência de Mercado</h3>
-                <p className="text-sm text-foreground/60 mt-1">Receba análises e estratégias direto no seu e-mail.</p>
+                <h3 className="font-headline text-lg font-semibold text-white">Conexão Direta com a Operação</h3>
+                <p className="text-sm text-foreground/60 mt-1">Canais de alta prioridade para acelerar seu negócio.</p>
               </div>
-              <form className="flex gap-2">
-                <Input 
-                  type="email" 
-                  placeholder="seu@email.com" 
-                  className="bg-black/20 border-border/50 focus:border-primary"
-                  aria-label="Email para newsletter"
-                />
-                <Button type="submit" variant="outline" className="bg-transparent border-primary/50 text-primary-foreground hover:bg-primary/10">
-                  Inscrever
-                </Button>
-              </form>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                 <a href="#" className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
+                    <Calendar className="h-5 w-5 text-primary/70 group-hover:text-primary transition-colors" />
+                    <span className="text-sm text-foreground/70 group-hover:text-white transition-colors">Agendar Diagnóstico</span>
+                </a>
+                 <a href="#" className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
+                    <Linkedin className="h-5 w-5 text-primary/70 group-hover:text-primary transition-colors" />
+                    <span className="text-sm text-foreground/70 group-hover:text-white transition-colors">LinkedIn Corporativo</span>
+                </a>
+                 <a href="#" className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
+                    <MessageCircle className="h-5 w-5 text-primary/70 group-hover:text-primary transition-colors" />
+                    <span className="text-sm text-foreground/70 group-hover:text-white transition-colors">Suporte Estratégico</span>
+                </a>
+                 <a href="#" className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
+                    <FileText className="h-5 w-5 text-primary/70 group-hover:text-primary transition-colors" />
+                    <span className="text-sm text-foreground/70 group-hover:text-white transition-colors">Nossa Metodologia (PDF)</span>
+                </a>
+              </div>
             </div>
           </div>
         </FadeIn>
