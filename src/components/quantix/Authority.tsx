@@ -75,26 +75,45 @@ export function Authority() {
         </p>
         
         <FadeIn delay={400}>
-          <div className="mt-12">
-            <p className="text-center text-muted-foreground mb-8">Empresas que confiam e crescem com a Quantix</p>
-            <div 
-              className="relative w-full overflow-hidden py-4"
-              style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'}}
-            >
-              <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
-                {[...clientLogos, ...clientLogos].map((logo, i) => (
-                  <div key={`${logo.id}-${i}`} className="flex-shrink-0 px-10 mx-auto">
-                    <Image
-                      src={logo.imageUrl}
-                      alt={logo.description}
-                      width={120}
-                      height={48}
-                      data-ai-hint={logo.imageHint}
-                      className="opacity-40 transition-all duration-300 hover:opacity-100 hover:drop-shadow-[0_0_10px_hsl(var(--primary)/0.5)]"
-                    />
-                  </div>
-                ))}
+          <div className="mt-20">
+            <div className="flex flex-col items-center justify-center text-center gap-2 mb-8">
+                <div className="flex items-center gap-3">
+                    <div className="hidden md:flex h-5 items-center gap-0.5">
+                        <div className="w-0.5 h-full rounded-full bg-primary/50" />
+                        <div className="w-0.5 h-2/3 rounded-full bg-primary/50" />
+                        <div className="w-0.5 h-full rounded-full bg-primary/50" />
+                        <div className="w-0.5 h-1/3 rounded-full bg-primary/50" />
+                        <div className="w-0.5 h-full rounded-full bg-primary/50" />
+                    </div>
+                    <p className="text-muted-foreground">Empresas que confiam e crescem com a Quantix</p>
+                </div>
+                <p className="text-sm text-muted-foreground/60 -mt-2">
+                    Mais de 50 operações escaladas com segurança e previsibilidade.
+                </p>
+            </div>
+
+            <div className="relative bg-[#0A0A0A]">
+              <div className="absolute top-0 left-0 h-px w-full bg-gradient-to-r from-background via-primary/30 to-background"></div>
+              <div 
+                className="relative w-full overflow-hidden py-8"
+                style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)'}}
+              >
+                <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+                  {[...clientLogos, ...clientLogos].map((logo, i) => (
+                    <div key={`${logo.id}-${i}`} className="flex-shrink-0 px-12">
+                      <Image
+                        src={logo.imageUrl}
+                        alt={logo.description}
+                        width={120}
+                        height={48}
+                        data-ai-hint={logo.imageHint}
+                        className="object-contain grayscale opacity-50 transition-all duration-300 hover:scale-110 hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_10px_hsl(var(--primary)/0.5)]"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
+              <div className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-background via-primary/30 to-background"></div>
             </div>
           </div>
         </FadeIn>
