@@ -51,7 +51,7 @@ export function Authority() {
             {stats.map((stat, index) => {
               const isFloat = stat.value % 1 !== 0;
               return (
-              <FadeIn key={stat.label} delay={index * 200}>
+              <FadeIn key={stat.description} delay={index * 200}>
                 <div className="relative h-full p-8 rounded-lg bg-card/30 backdrop-blur-sm border border-border/30 overflow-hidden">
                     <div className="absolute -top-8 -left-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl animate-pulse-subtle"></div>
                     <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl animate-pulse-subtle" style={{ animationDelay: '500ms' }}></div>
