@@ -10,7 +10,6 @@ export function Hero() {
       <video
         src={VIDEO_URL}
         autoPlay
-        loop
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
