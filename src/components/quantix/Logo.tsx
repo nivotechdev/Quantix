@@ -3,17 +3,20 @@ import { cn } from "@/lib/utils";
 
 export function QuantixLogo({ className }: { className?: string }) {
   return (
-    <div className={cn("flex items-center gap-1", className)}>
+    <div className={cn("flex items-center gap-2", className)}>
       <Image 
         src="https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/sign/AgenciaQuantix/WhatsApp_Image_2026-01-20_at_15.00.50-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9jOWY1OGE2Ni03MDFhLTRhNDQtOWJhZC0zOGRkNmVkYTNhODAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBZ2VuY2lhUXVhbnRpeC9XaGF0c0FwcF9JbWFnZV8yMDI2LTAxLTIwX2F0XzE1LjAwLjUwLXJlbW92ZWJnLXByZXZpZXcucG5nIiwiaWF0IjoxNzY5MDEwMDI5LCJleHAiOjIwODQzNzAwMjl9.hD67UWQYJZ7S3_Vov6MIBCcszI2US08l4qYmxsgiAFo" 
         alt="Quantix Logo" 
-        width={200} 
-        height={200} 
-        className="h-[4.3125rem] w-auto md:h-[6.3125rem]"
+        width={100} 
+        height={100} 
+        className="h-10 w-auto md:h-14"
+        priority
       />
-      <div>
-        <div className="text-2xl font-bold font-headline text-white md:text-4xl">Quantix</div>
-        <p className="-mt-1 text-xs text-muted-foreground md:text-sm">agência de marketing</p>
+      <div className="flex flex-col justify-center -ml-1">
+        <div className="text-xl font-bold font-headline text-white md:text-3xl">Quantix</div>
+        <p className="-mt-1.5 hidden text-[10px] font-light tracking-widest text-muted-foreground/80 sm:block">
+          AGÊNCIA DE MARKETING
+        </p>
       </div>
     </div>
   );
