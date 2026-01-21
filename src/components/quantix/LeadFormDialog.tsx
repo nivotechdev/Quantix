@@ -1,7 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
-import { useEffect, useState } from 'react';
+import { useFormStatus } from 'react-dom';
+import { useActionState, useEffect, useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { submitLeadAction } from '@/app/actions';
 
@@ -38,7 +38,7 @@ function SubmitButton() {
 
 export function LeadFormDialog({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
-  const [state, formAction] = useFormState(submitLeadAction, initialState);
+  const [state, formAction] = useActionState(submitLeadAction, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
