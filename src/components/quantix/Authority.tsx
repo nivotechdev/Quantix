@@ -45,21 +45,24 @@ export function Authority() {
         <FadeIn delay={400}>
           <div className="mt-24">
             <p className="text-center text-muted-foreground mb-8">Empresas que confiam e crescem com a Quantix</p>
-            <div className="bg-card p-8 rounded-lg">
-                <div className="grid grid-cols-3 sm:grid-cols-5 gap-8 items-center">
-                  {clientLogos.map(logo => (
-                    <div key={logo.id} className="flex justify-center">
-                      <Image
-                        src={logo.imageUrl}
-                        alt={logo.description}
-                        width={120}
-                        height={48}
-                        data-ai-hint={logo.imageHint}
-                        className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                  ))}
-                </div>
+            <div 
+              className="relative w-full overflow-hidden py-4"
+              style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'}}
+            >
+              <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+                {[...clientLogos, ...clientLogos].map((logo, i) => (
+                  <div key={`${logo.id}-${i}`} className="flex-shrink-0 px-10 mx-auto">
+                    <Image
+                      src={logo.imageUrl}
+                      alt={logo.description}
+                      width={120}
+                      height={48}
+                      data-ai-hint={logo.imageHint}
+                      className="opacity-40 transition-all duration-300 hover:opacity-100 hover:drop-shadow-[0_0_10px_hsl(var(--primary)/0.5)]"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </FadeIn>
