@@ -26,13 +26,14 @@ export function FadeIn({ children, className, delay = 0 }: FadeInProps) {
       { threshold: 0.1 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -41,8 +42,10 @@ export function FadeIn({ children, className, delay = 0 }: FadeInProps) {
     <div
       ref={ref}
       className={cn(
-        "transition-all duration-700 ease-out",
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
+        "transition-all duration-1000 ease-out transform-gpu",
+        isVisible
+          ? "opacity-100 translate-y-0 scale-100 rotate-0"
+          : "opacity-0 translate-y-8 scale-95 rotate-1",
         className
       )}
       style={{ transitionDelay: `${delay}ms` }}
