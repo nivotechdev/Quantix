@@ -34,14 +34,14 @@ export function Header() {
           : "bg-transparent border-b border-transparent"
       )}
     >
-      <div className="container mx-auto flex items-center justify-between gap-2.5 px-4 md:px-6 h-[90px] md:h-[100px]">
+      <div className="container mx-auto flex items-center justify-between gap-4 px-4 md:px-6 h-[90px] md:h-[100px]">
         {/* Brand Block */}
-        <div className="flex items-center flex-1 min-w-0">
+        <div className="flex items-center basis-3/5 shrink-0 min-w-0">
           <QuantixLogo className="h-full max-h-[60px] md:max-h-[70px]"/>
         </div>
         
         {/* Action Button */}
-        <div className="flex-shrink-0">
+        <div className="flex-1 flex justify-end">
             <Button 
                 asChild 
                 style={{ borderRadius: '12px' }}
@@ -51,7 +51,7 @@ export function Header() {
             >
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="hidden md:block mr-2 h-4 w-4 shrink-0" />
-                <span className="whitespace-nowrap">Fale com um Especialista</span>
+                <span className="">Fale com um Especialista</span>
                 <Rocket className="ml-2 h-4 w-4 shrink-0 button-icon-rocket" />
               </a>
             </Button>
