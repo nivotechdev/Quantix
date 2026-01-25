@@ -35,6 +35,12 @@
       "description": "Placeholder for a client logo.",
       "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvfGVufDB8fHx8MTc2ODg4NDA2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "logo"
+    },
+    {
+      "id": "founder-photo",
+      "description": "Professional headshot of the founder, in black and white.",
+      "imageUrl": "https://images.unsplash.com/photo-1758691737587-7630b4d31d16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb3VuZGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY5MzUyODQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "founder portrait"
     }
   ]
 }
