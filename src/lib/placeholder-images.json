@@ -39,7 +39,7 @@
     {
       "id": "founder-photo",
       "description": "Professional headshot of the founder, in black and white.",
-      "imageUrl": "https://images.unsplash.com/photo-1758691737587-7630b4d31d16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb3VuZGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY5MzUyODQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/sign/AgenciaQuantix/538974651_18529198810060433_4426160338471284096_n.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9jOWY1OGE2Ni03MDFhLTRhNDQtOWJhZC0zOGRkNmVkYTNhODAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBZ2VuY2lhUXVhbnRpeC81Mzg5NzQ2NTFfMTg1MjkxOTg4MTAwNjA0MzNfNDQyNjE2MDMzODQ3MTI4NDA5Nl9uLmpwZyIsImlhdCI6MTc2OTM1MzA4MiwiZXhwIjoxNzY5OTU3ODgyfQ.kkBRVWOzvocPXyDQCSxzcjkBITBb-zLCH_DLdg2CADc",
       "imageHint": "founder portrait"
     }
   ]
