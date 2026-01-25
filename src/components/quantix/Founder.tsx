@@ -34,7 +34,7 @@ export function Founder() {
                 width={400}
                 height={600}
                 data-ai-hint={founderImage.imageHint}
-                className="relative object-cover object-top w-[300px] h-[450px] lg:w-[350px] lg:h-[525px] rounded-lg grayscale contrast-125 brightness-110 shadow-2xl shadow-black/50"
+                className="relative object-cover object-top w-[300px] h-[450px] lg:w-[350px] lg:h-[525px] rounded-lg shadow-2xl shadow-black/50"
               />
                <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-card via-card/50 to-transparent"></div>
             </div>
