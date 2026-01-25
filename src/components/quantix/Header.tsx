@@ -28,30 +28,31 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-400 ease-in-out",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-400 ease-in-out overflow-hidden",
         scrolled 
           ? "bg-[#0F0F0F]/85 backdrop-blur-[15px] border-b border-primary/15 header-scrolled" 
           : "bg-transparent border-b border-transparent"
       )}
     >
-      <div className="container mx-auto flex items-center justify-between gap-4 px-4 md:px-6 h-[90px] md:h-[100px]">
+      <div className="container mx-auto flex items-center justify-between flex-nowrap gap-4 px-4 md:px-6 h-[90px] md:h-[100px]">
         {/* Brand Block */}
-        <div className="flex items-center basis-3/5 shrink-0 min-w-0">
+        <div className="flex items-center flex-shrink-0">
           <QuantixLogo className="h-full max-h-[60px] md:max-h-[70px]"/>
         </div>
         
         {/* Action Button */}
-        <div className="flex-1 flex justify-end">
+        <div className="flex justify-end">
             <Button 
                 asChild 
                 style={{ borderRadius: '12px' }}
-                className="w-auto bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] transition-all duration-300 uppercase font-semibold tracking-wider 
-                text-[11px] h-9 px-2.5
-                md:text-sm md:h-11 md:px-6"
+                className="w-auto bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] transition-all duration-300 font-semibold 
+                text-[11px] h-9 px-3
+                md:text-sm md:h-11 md:px-6 md:uppercase md:tracking-wider"
             >
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="hidden md:block mr-2 h-4 w-4 shrink-0" />
-                <span className="">Fale com um Especialista</span>
+                <span className="hidden md:inline whitespace-nowrap">Fale com um Especialista</span>
+                <span className="md:hidden whitespace-nowrap">Falar Agora</span>
                 <Rocket className="ml-2 h-4 w-4 shrink-0 button-icon-rocket" />
               </a>
             </Button>
