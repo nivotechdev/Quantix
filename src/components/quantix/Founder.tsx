@@ -52,13 +52,13 @@ export function Founder() {
 
             <FadeIn delay={200}>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-                Com foco em escala e performance quântica, <strong>Gabriel Leite</strong> lidera a Quantix com uma visão clara: transformar dados frios em crescimento real. Não entregamos apenas tráfego, entregamos escala previsível.
+                Com foco em escala e performance quântica, <strong>André Peruzzato</strong> lidera a Quantix com uma visão clara: transformar dados frios em crescimento real. Não entregamos apenas tráfego, entregamos escala previsível.
               </p>
             </FadeIn>
 
             <FadeIn delay={300}>
                 <div className="mt-8">
-                    <p style={{ fontFamily: "'Dancing Script', cursive" }} className="text-4xl text-primary -mb-2">Gabriel Leite</p>
+                    <p style={{ fontFamily: "'Dancing Script', cursive" }} className="text-4xl text-primary -mb-2">André Peruzzato</p>
                     <p className="text-sm font-light text-muted-foreground tracking-widest mt-1">CEO & FOUNDER</p>
                 </div>
             </FadeIn>
