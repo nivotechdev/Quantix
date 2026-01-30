@@ -1,3 +1,5 @@
+'use client';
+
 import { Linkedin, Instagram } from "lucide-react";
 import { QuantixLogo } from "./Logo";
 import { FadeIn } from "./FadeIn";
@@ -25,6 +27,14 @@ const socialLinks = [
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+
+  const handleCookiePrefs = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('cookies_accepted');
+      window.location.reload();
+    }
+  };
 
   return (
     <footer className="bg-background border-t border-border/20">
@@ -86,9 +96,9 @@ export function Footer() {
               &copy; {currentYear} Agência Quantix | CNPJ: 00.000.000/0001-00. Todos os direitos reservados.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-              <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-              <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
-              <a href="#" className="hover:text-primary transition-colors">Preferências de Cookies</a>
+              <Link href="/politica-privacidade" className="hover:text-primary transition-colors">Política de Privacidade</Link>
+              <Link href="/termos-de-uso" className="hover:text-primary transition-colors">Termos de Uso</Link>
+              <button onClick={handleCookiePrefs} className="bg-transparent border-none p-0 cursor-pointer text-xs text-foreground/50 hover:text-primary transition-colors">Preferências de Cookies</button>
             </div>
           </div>
         </div>

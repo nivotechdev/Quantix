@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import { ScrollProgressBar } from '@/components/quantix/ScrollProgressBar';
+import { CookieBanner } from '@/components/quantix/CookieBanner';
 
 export const metadata: Metadata = {
   title: 'Agência Quantix | Marketing Estratégico para Crescimento',
@@ -28,6 +29,7 @@ export default function RootLayout({
         </div>
         {children}
         <Toaster />
+        <CookieBanner />
       </body>
     </html>
   );
