@@ -95,10 +95,15 @@ export function Footer() {
             <p className="text-center md:text-left">
               &copy; {currentYear} Agência Quantix | CNPJ: 00.000.000/0001-00. Todos os direitos reservados.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-              <Link href="/politica-privacidade" className="hover:text-primary transition-colors">Política de Privacidade</Link>
-              <Link href="/termos-de-uso" className="hover:text-primary transition-colors">Termos de Uso</Link>
-              <button onClick={handleCookiePrefs} className="bg-transparent border-none p-0 cursor-pointer text-xs text-foreground/50 hover:text-primary transition-colors">Preferências de Cookies</button>
+            <div className="flex flex-col items-center md:items-end gap-2">
+              <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+                <Link href="/politica-privacidade" className="hover:text-primary transition-colors">Política de Privacidade</Link>
+                <Link href="/termos-de-uso" className="hover:text-primary transition-colors">Termos de Uso</Link>
+                <button onClick={handleCookiePrefs} className="bg-transparent border-none p-0 cursor-pointer text-xs text-foreground/50 hover:text-primary transition-colors">Preferências de Cookies</button>
+              </div>
+              <p>
+                Desenvolvido por <a href="https://nivotech.com.br" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground/70 hover:text-primary transition-colors">NivoTech</a>
+              </p>
             </div>
           </div>
         </div>
