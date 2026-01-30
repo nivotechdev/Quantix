@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { QuantixLogo } from "@/components/quantix/Logo";
 import { cn } from "@/lib/utils";
 import { MessageCircle, Rocket } from "lucide-react";
+import Link from 'next/link';
 
 const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20Quantix.";
 
@@ -36,9 +37,11 @@ export function Header() {
     >
       <div className="container mx-auto flex items-center justify-between flex-nowrap gap-4 px-4 md:px-6 h-[90px] md:h-[100px]">
         {/* Brand Block */}
-        <div className="flex items-center flex-shrink-0">
-          <QuantixLogo className="h-full max-h-[60px] md:max-h-[70px]"/>
-        </div>
+        <Link href="/" aria-label="Página Inicial">
+          <div className="flex items-center flex-shrink-0">
+            <QuantixLogo className="h-full max-h-[60px] md:max-h-[70px]"/>
+          </div>
+        </Link>
         
         {/* Action Button */}
         <div className="flex justify-end">

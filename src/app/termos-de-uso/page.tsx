@@ -1,14 +1,24 @@
 import { Header } from "@/components/quantix/Header";
 import { Footer } from "@/components/quantix/Footer";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+import { ClientOnly } from "@/components/quantix/ClientOnly";
 
 export default function TermosDeUsoPage() {
   return (
     <>
       <Header />
       <main className="py-32 bg-background text-foreground">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl space-y-8">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-white">Termos de Uso</h1>
-          <p className="text-muted-foreground">Última atualização: {new Date().toLocaleDateString('pt-BR')}</p>
+        <div className="container mx-auto px-4 md:px-6 max-w-4xl space-y-10">
+          <Link href="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-all">
+            <ArrowLeft className="h-4 w-4" />
+            Voltar para o Início
+          </Link>
+          
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline text-white">Termos de Uso</h1>
+            <p className="text-muted-foreground mt-2">Última atualização: <ClientOnly>{new Date().toLocaleDateString('pt-BR')}</ClientOnly></p>
+          </div>
 
           <div className="space-y-4 text-lg text-foreground/80">
             <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">1. Aceitação dos Termos</h2>
