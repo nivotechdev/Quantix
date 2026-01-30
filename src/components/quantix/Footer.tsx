@@ -115,10 +115,6 @@ export function Footer() {
                     <MessageCircle className="h-5 w-5 text-primary/70 group-hover:text-primary transition-colors" />
                     <span className="text-sm text-foreground/70 group-hover:text-white transition-colors">Suporte Estratégico</span>
                 </a>
-                 <a href="#" className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
-                    <FileText className="h-5 w-5 text-primary/70 group-hover:text-primary transition-colors" />
-                    <span className="text-sm text-foreground/70 group-hover:text-white transition-colors">Nossa Metodologia (PDF)</span>
-                </a>
               </div>
             </div>
           </div>
