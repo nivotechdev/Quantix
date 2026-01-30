@@ -28,10 +28,10 @@ export function Footer() {
   return (
     <footer className="bg-background border-t border-border/20">
       <div className="container mx-auto px-4 md:px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
           {/* Col 1: Brand & Social */}
-          <FadeIn delay={0} className="sm:col-span-2 lg:col-span-1">
-            <div className="flex flex-col">
+          <FadeIn delay={0}>
+            <div className="flex flex-col items-start">
               <QuantixLogo />
               <p className="mt-4 max-w-xs text-foreground/70 leading-relaxed">
                 Transformando dados em escala através da engenharia de marketing.
@@ -49,7 +49,7 @@ export function Footer() {
           {/* Col 2: Soluções */}
           <FadeIn delay={100}>
             <div className="flex flex-col">
-              <h3 className="font-headline font-semibold text-white">Soluções</h3>
+              <h3 className="font-headline font-semibold tracking-wider text-white uppercase">Soluções</h3>
               <ul className="mt-4 space-y-3">
                 {navLinks.solucoes.map((link) => (
                   <li key={link.name}>
@@ -65,7 +65,7 @@ export function Footer() {
           {/* Col 3: Quantix */}
           <FadeIn delay={200}>
             <div className="flex flex-col">
-              <h3 className="font-headline font-semibold text-white">Quantix</h3>
+              <h3 className="font-headline font-semibold tracking-wider text-white uppercase">Quantix</h3>
               <ul className="mt-4 space-y-3">
                 {navLinks.quantix.map((link) => (
                   <li key={link.name}>
