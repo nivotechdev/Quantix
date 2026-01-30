@@ -38,7 +38,7 @@ const StatChart = () => (
 
 export function Authority() {
   return (
-    <section className="py-20 md:py-28 bg-background has-growth-vectors">
+    <section id="authority" className="py-20 md:py-28 bg-background has-growth-vectors">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <MaskReveal>
           <div className="text-center max-w-3xl mx-auto">

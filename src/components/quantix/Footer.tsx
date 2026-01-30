@@ -103,7 +103,7 @@ export function Footer() {
                 <p className="text-sm text-foreground/60 mt-1">Canais de alta prioridade para acelerar seu negócio.</p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                 <a href="#" className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
+                 <a href="#cta" className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
                     <Calendar className="h-5 w-5 text-primary/70 group-hover:text-primary transition-colors" />
                     <span className="text-sm text-foreground/70 group-hover:text-white transition-colors">Agendar Diagnóstico</span>
                 </a>

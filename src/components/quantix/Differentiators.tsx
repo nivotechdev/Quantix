@@ -27,7 +27,7 @@ const differentiators = [
 
 export function Differentiators() {
   return (
-    <section className="py-20 md:py-28 bg-card has-growth-vectors">
+    <section id="differentiators" className="py-20 md:py-28 bg-card has-growth-vectors">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <MaskReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">

@@ -7,7 +7,7 @@ const WHATSAPP_LINK_GROW = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero
 
 export function Cta() {
   return (
-    <section className="py-20 md:py-32 bg-background">
+    <section id="cta" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <FadeIn delay={200}>
           <div className="relative rounded-xl p-8 md:p-16 text-center overflow-hidden bg-gradient-to-b from-card/50 to-background border-t border-primary/30 shadow-[0_-10px_40px_-15px_hsl(var(--primary)/0.2)]">
