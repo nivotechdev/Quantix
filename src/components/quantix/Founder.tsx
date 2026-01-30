@@ -16,7 +16,7 @@ export function Founder() {
   if (!founderImage) return null;
 
   return (
-    <section className="py-20 md:py-28 bg-card overflow-hidden relative">
+    <section id="seo-section" className="py-20 md:py-28 bg-card overflow-hidden relative scroll-mt-24">
       {/* Diagonal growth line */}
       <div className="absolute top-1/2 left-0 w-full h-px -translate-y-1/2">
         <div className="w-1/2 h-px bg-gradient-to-r from-transparent to-primary/20 -ml-1/4 transform -rotate-12"></div>

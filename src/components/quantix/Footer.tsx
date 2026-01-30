@@ -1,17 +1,18 @@
 import { Linkedin, Instagram } from "lucide-react";
 import { QuantixLogo } from "./Logo";
 import { FadeIn } from "./FadeIn";
+import Link from "next/link";
 
 const navLinks = {
   solucoes: [
     { name: "Tráfego Pago", href: "#services" },
-    { name: "Análise de Dados", href: "#services" },
-    { name: "SEO", href: "#services" },
+    { name: "Análise de Dados", href: "#analise-dados" },
+    { name: "SEO", href: "#seo-section" },
     { name: "Estratégia Digital", href: "#services" },
   ],
   quantix: [
     { name: "Sobre Nós", href: "#differentiators" },
-    { name: "Cases de Sucesso", href: "#authority" },
+    { name: "Cases de Sucesso", href: "#analise-dados" },
     { name: "Metodologia", href: "#differentiators" },
     { name: "Contato", href: "#cta" },
   ],
@@ -53,9 +54,9 @@ export function Footer() {
               <ul className="mt-4 space-y-3">
                 {navLinks.solucoes.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-foreground/60 hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">
+                    <Link href={link.href} className="text-foreground/60 hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -69,9 +70,9 @@ export function Footer() {
               <ul className="mt-4 space-y-3">
                 {navLinks.quantix.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-foreground/60 hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">
+                    <Link href={link.href} className="text-foreground/60 hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
