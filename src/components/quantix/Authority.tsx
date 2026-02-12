@@ -92,14 +92,14 @@ export function Authority() {
               <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-48 bg-primary/5 blur-3xl opacity-50"></div>
               <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
                 {[...clientLogos, ...clientLogos].map((logo, i) => (
-                  <div key={`${logo.id}-${i}`} className="flex-shrink-0 px-12 h-28 flex justify-center items-center">
+                  <div key={`${logo.id}-${i}`} className="flex-shrink-0 px-12 h-32 flex justify-center items-center">
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
-                      width={160}
-                      height={64}
+                      width={200}
+                      height={80}
                       data-ai-hint={logo.imageHint}
-                      className="object-contain h-16 w-32 transition-all duration-400 hover:scale-115 hover:drop-shadow-[0_0_15px_hsl(var(--primary)/0.4)]"
+                      className="object-contain h-20 w-40 transition-all duration-400 hover:scale-115 hover:drop-shadow-[0_0_15px_hsl(var(--primary)/0.4)]"
                     />
                   </div>
                 ))}
