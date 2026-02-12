@@ -99,7 +99,7 @@ export function Authority() {
                       width={160}
                       height={64}
                       data-ai-hint={logo.imageHint}
-                      className="object-contain h-16 w-auto grayscale brightness-150 transition-all duration-400 hover:grayscale-0 hover:brightness-100 hover:scale-115 hover:drop-shadow-[0_0_15px_hsl(var(--primary)/0.4)]"
+                      className="object-contain h-16 w-32 transition-all duration-400 hover:scale-115 hover:drop-shadow-[0_0_15px_hsl(var(--primary)/0.4)]"
                     />
                   </div>
                 ))}
