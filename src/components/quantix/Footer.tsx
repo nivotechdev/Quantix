@@ -22,7 +22,7 @@ const navLinks = {
 
 const socialLinks = [
   { name: "LinkedIn", href: "#", icon: Linkedin },
-  { name: "Instagram", href: "#", icon: Instagram },
+  { name: "Instagram", href: "https://www.instagram.com/agenciaquantix/", icon: Instagram },
 ];
 
 export function Footer() {
@@ -49,7 +49,7 @@ export function Footer() {
               </p>
               <div className="mt-6 flex items-center space-x-4">
                 {socialLinks.map((link) => (
-                  <a key={link.name} href={link.href} className="text-foreground/60 hover:text-primary hover:scale-110 transition-transform">
+                  <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary hover:scale-110 transition-transform">
                     <link.icon className="h-6 w-6" />
                   </a>
                 ))}
