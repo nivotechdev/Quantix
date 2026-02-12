@@ -8,33 +8,33 @@
     },
     {
       "id": "client-logo-1",
-      "description": "Placeholder for a client logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvfGVufDB8fHx8MTc2ODg4NDA2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo"
+      "description": "Logo de cliente",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/agenciaquantics2/Dia%20das%20mulheres%20mensagem%20celebrativa%20florido%20rosa%20branco%20post%20do%20instagram%20(2).png",
+      "imageHint": "logo cliente"
     },
     {
       "id": "client-logo-2",
-      "description": "Placeholder for a client logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvfGVufDB8fHx8MTc2ODg4NDA2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo"
+      "description": "Logo de cliente",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/agenciaquantics2/Dia%20das%20mulheres%20mensagem%20celebrativa%20florido%20rosa%20branco%20post%20do%20instagram%20(3).png",
+      "imageHint": "logo cliente"
     },
     {
       "id": "client-logo-3",
-      "description": "Placeholder for a client logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvfGVufDB8fHx8MTc2ODg4NDA2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo"
+      "description": "Logo de cliente",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/agenciaquantics2/Dia%20das%20mulheres%20mensagem%20celebrativa%20florido%20rosa%20branco%20post%20do%20instagram%20(4).png",
+      "imageHint": "logo cliente"
     },
     {
       "id": "client-logo-4",
-      "description": "Placeholder for a client logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvfGVufDB8fHx8MTc2ODg4NDA2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo"
+      "description": "Logo de cliente",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/agenciaquantics2/Logo%20MCA%20Contabilidade.jpg.jpeg",
+      "imageHint": "logo cliente"
     },
     {
       "id": "client-logo-5",
-      "description": "Placeholder for a client logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvfGVufDB8fHx8MTc2ODg4NDA2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo"
+      "description": "Logo de cliente",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/agenciaquantics2/WhatsApp%20Image%202026-02-11%20at%2020.58.29.jpeg",
+      "imageHint": "logo cliente"
     },
     {
       "id": "founder-photo",
