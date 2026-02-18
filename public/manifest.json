@@ -1,0 +1,14 @@
+{
+  "name": "Quantix",
+  "short_name": "Quantix",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}

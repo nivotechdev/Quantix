@@ -1,4 +1,4 @@
-import { Target, MonitorSmartphone, BrainCircuit } from "lucide-react";
+import { Target, MonitorSmartphone, BrainCircuit, Bot } from "lucide-react";
 import { FadeIn } from "./FadeIn";
 import { MaskReveal } from "./MaskReveal";
 
@@ -23,6 +23,13 @@ const services = [
     description: "Analisamos seu negócio e mercado para desenvolver um plano de marketing data-driven focado em crescimento.",
     tag: "Estratégia",
     span: "lg:col-span-1",
+  },
+  {
+    icon: <Bot className="h-8 w-8 text-primary" />,
+    title: "Funis e Automação",
+    description: "Desenvolvemos sistemas automatizados que nutrem leads e geram vendas consistentes no piloto automático.",
+    tag: "Escala",
+    span: "lg:col-span-2",
   },
 ];
 
