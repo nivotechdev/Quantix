@@ -1,34 +1,34 @@
-import { Target, MonitorSmartphone, BrainCircuit, Bot } from "lucide-react";
+import { Target, MonitorSmartphone, BrainCircuit, Palette } from "lucide-react";
 import { FadeIn } from "./FadeIn";
 import { MaskReveal } from "./MaskReveal";
 
 const services = [
   {
     icon: <Target className="h-8 w-8 text-primary" />,
-    title: "Gestão de Tráfego Pago",
+    title: "Gestão de tráfego pago",
     description: "Atraímos o público certo e maximizamos seu ROI com campanhas de alta performance no Google, Meta e TikTok Ads.",
     tag: "Performance",
     span: "lg:col-span-2",
   },
   {
     icon: <MonitorSmartphone className="h-8 w-8 text-primary" />,
-    title: "Sites de Alta Conversão",
+    title: "Sites de alta conversão",
     description: "Criamos sites e landing pages rápidos, responsivos e otimizados para transformar visitantes em clientes.",
     tag: "Conversão",
     span: "lg:col-span-1",
   },
   {
     icon: <BrainCircuit className="h-8 w-8 text-primary" />,
-    title: "Estratégia de Marketing",
+    title: "Estratégia de marketing",
     description: "Analisamos seu negócio e mercado para desenvolver um plano de marketing data-driven focado em crescimento.",
     tag: "Estratégia",
     span: "lg:col-span-1",
   },
   {
-    icon: <Bot className="h-8 w-8 text-primary" />,
-    title: "Funis e Automação",
-    description: "Desenvolvemos sistemas automatizados que nutrem leads e geram vendas consistentes no piloto automático.",
-    tag: "Escala",
+    icon: <Palette className="h-8 w-8 text-primary" />,
+    title: "Design personalizado",
+    description: "Criamos identidades visuais únicas e materiais de design que capturam a essência da sua marca e encantam seu público.",
+    tag: "Identidade",
     span: "lg:col-span-2",
   },
 ];
@@ -41,7 +41,7 @@ export function Services() {
           <div className="lg:col-span-1 mb-12 lg:mb-0">
             <div className="lg:sticky lg:top-28">
               <MaskReveal>
-                <h2 className="font-headline text-3xl md:text-4xl font-bold">Nossas Soluções para o seu Crescimento</h2>
+                <h2 className="font-headline text-3xl md:text-4xl font-bold">Nossas soluções para o seu crescimento</h2>
                 <p className="mt-4 text-lg text-muted-foreground">Focamos em estratégias que geram resultados mensuráveis e impulsionam o seu negócio.</p>
               </MaskReveal>
             </div>

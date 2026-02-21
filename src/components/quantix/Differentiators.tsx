@@ -5,22 +5,22 @@ import { MaskReveal } from "./MaskReveal";
 const differentiators = [
   {
     icon: <Rocket className="h-8 w-8 text-primary" />,
-    title: "Estratégias Personalizadas",
+    title: "Estratégias personalizadas",
     description: "Nenhuma solução de prateleira. Mergulhamos no seu negócio para criar um plano único.",
   },
   {
     icon: <TrendingUp className="h-8 w-8 text-primary" />,
-    title: "Foco em ROI e Crescimento",
+    title: "Foco em ROI e crescimento",
     description: "Cada ação é medida e otimizada. Nosso sucesso é o crescimento dos seus números.",
   },
   {
     icon: <BarChart4 className="h-8 w-8 text-primary" />,
-    title: "Uso de Tecnologia e Dados",
+    title: "Uso de tecnologia e dados",
     description: "Usamos as melhores ferramentas e análise de dados para tomar decisões inteligentes.",
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-    title: "Atendimento Consultivo",
+    title: "Atendimento consultivo",
     description: "Somos uma extensão da sua equipe, com transparência total e comunicação clara.",
   },
 ];
@@ -31,7 +31,7 @@ export function Differentiators() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <MaskReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Mais que uma Agência, um Parceiro Estratégico</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Mais que uma agência, um parceiro estratégico</h2>
             <p className="mt-4 text-lg text-muted-foreground">Entendemos seus desafios e trabalhamos lado a lado para superar suas metas.</p>
           </div>
         </MaskReveal>

@@ -1,28 +1,28 @@
 'use client';
 
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram, Facebook } from "lucide-react";
 import { QuantixLogo } from "./Logo";
 import { FadeIn } from "./FadeIn";
 import Link from "next/link";
 
 const navLinks = {
   solucoes: [
-    { name: "Tráfego Pago", href: "#services" },
-    { name: "Análise de Dados", href: "#analise-dados" },
-    { name: "SEO", href: "#seo-section" },
-    { name: "Estratégia Digital", href: "#services" },
+    { name: "Tráfego pago", href: "#services" },
+    { name: "Análise de dados", href: "#analise-dados" },
+    { name: "Estratégia digital", href: "#services" },
   ],
   quantix: [
-    { name: "Sobre Nós", href: "#differentiators" },
-    { name: "Cases de Sucesso", href: "#analise-dados" },
+    { name: "Sobre nós", href: "#differentiators" },
+    { name: "Cases de sucesso", href: "#analise-dados" },
     { name: "Metodologia", href: "#differentiators" },
     { name: "Contato", href: "#cta" },
   ],
 };
 
 const socialLinks = [
-  { name: "LinkedIn", href: "#", icon: Linkedin },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/andr%C3%A9-luiz-peruzzato-b5284637b/", icon: Linkedin },
   { name: "Instagram", href: "https://www.instagram.com/agenciaquantix/", icon: Instagram },
+  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61579985267350", icon: Facebook },
 ];
 
 export function Footer() {
@@ -45,7 +45,7 @@ export function Footer() {
             <div className="flex flex-col items-start">
               <QuantixLogo />
               <p className="mt-4 max-w-xs text-foreground/70 leading-relaxed">
-                Transformando dados em escala através da engenharia de marketing.
+                Transformando dados em escala através de soluções de marketing.
               </p>
               <div className="mt-6 flex items-center space-x-4">
                 {socialLinks.map((link) => (
@@ -97,9 +97,9 @@ export function Footer() {
             </p>
             <div className="flex flex-col items-center md:items-end gap-2">
               <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-                <Link href="/politica-privacidade" className="hover:text-primary transition-colors">Política de Privacidade</Link>
-                <Link href="/termos-de-uso" className="hover:text-primary transition-colors">Termos de Uso</Link>
-                <button onClick={handleCookiePrefs} className="bg-transparent border-none p-0 cursor-pointer text-xs text-foreground/50 hover:text-primary transition-colors">Preferências de Cookies</button>
+                <Link href="/politica-privacidade" className="hover:text-primary transition-colors">Política de privacidade</Link>
+                <Link href="/termos-de-uso" className="hover:text-primary transition-colors">Termos de uso</Link>
+                <button onClick={handleCookiePrefs} className="bg-transparent border-none p-0 cursor-pointer text-xs text-foreground/50 hover:text-primary transition-colors">Preferências de cookies</button>
               </div>
               <p>
                 Desenvolvido por <a href="https://nivotech.com.br" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground/70 hover:text-primary transition-colors">NivoTech</a>

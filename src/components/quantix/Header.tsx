@@ -54,8 +54,8 @@ export function Header() {
             >
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="hidden md:block mr-2 h-4 w-4 shrink-0" />
-                <span className="hidden md:inline whitespace-nowrap">Fale com um Especialista</span>
-                <span className="md:hidden whitespace-nowrap">Falar Agora</span>
+                <span className="hidden md:inline whitespace-nowrap">Fale com um especialista</span>
+                <span className="md:hidden whitespace-nowrap">Falar agora</span>
                 <Rocket className="ml-2 h-4 w-4 shrink-0 button-icon-rocket" />
               </a>
             </Button>

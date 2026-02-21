@@ -12,26 +12,26 @@ export default function PoliticaPrivacidadePage() {
         <div className="container mx-auto px-4 md:px-6 max-w-4xl space-y-10">
           <Link href="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-all">
             <ArrowLeft className="h-4 w-4" />
-            Voltar para o Início
+            Voltar para o início
           </Link>
 
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold font-headline text-white">Política de Privacidade</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline text-white">Política de privacidade</h1>
             <p className="text-muted-foreground mt-2">Última atualização: <ClientOnly>{new Date().toLocaleDateString('pt-BR')}</ClientOnly></p>
           </div>
 
           <div className="space-y-4 text-lg text-foreground/80">
             <p>A sua privacidade é importante para nós. É política da Agência Quantix respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Quantix, e outros sites que possuímos e operamos.</p>
 
-            <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">1. Coleta de Dados</h2>
+            <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">1. Coleta de dados</h2>
             <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
             <p>Coletamos os seguintes tipos de informações:</p>
             <ul className="list-disc list-inside space-y-2 pl-4">
-              <li><strong>Informações de Contato:</strong> Nome, e-mail e telefone fornecidos através de nossos formulários de contato para que possamos retornar sua solicitação.</li>
-              <li><strong>Dados de Navegação:</strong> Informações sobre como você usa nosso site, como endereço IP, localização geográfica, tipo de navegador, duração da visita e páginas visitadas, coletadas através de cookies.</li>
+              <li><strong>Informações de contato:</strong> nome, e-mail e telefone fornecidos através de nossos formulários de contato para que possamos retornar sua solicitação.</li>
+              <li><strong>Dados de navegação:</strong> informações sobre como você usa nosso site, como endereço IP, localização geográfica, tipo de navegador, duração da visita e páginas visitadas, coletadas através de cookies.</li>
             </ul>
 
-            <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">2. Uso dos Dados</h2>
+            <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">2. Uso dos dados</h2>
              <p>Usamos as informações que coletamos para várias finalidades, incluindo:</p>
             <ul className="list-disc list-inside space-y-2 pl-4">
                 <li>Operar e manter nosso site;</li>
@@ -41,7 +41,7 @@ export default function PoliticaPrivacidadePage() {
                 <li>Prevenir fraudes.</li>
             </ul>
 
-            <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">3. Direitos do Titular (LGPD)</h2>
+            <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">3. Direitos do titular (LGPD)</h2>
             <p>Você, como titular dos dados, possui direitos garantidos pela Lei Geral de Proteção de Dados (LGPD). A Agência Quantix assegura a você o direito de acesso, correção, eliminação, e portabilidade dos seus dados. Para exercer seus direitos, entre em contato conosco através do e-mail: contato@agenciaquantix.com.br.</p>
 
             <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary pt-8">4. Cookies</h2>

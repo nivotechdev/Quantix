@@ -7,8 +7,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const founderImage = PlaceHolderImages.find(p => p.id === 'founder-photo');
 
 const trustIcons = [
-  { icon: <Award className="h-6 w-6 text-primary/80" />, text: "8+ anos de mercado" },
-  { icon: <TrendingUp className="h-6 w-6 text-primary/80" />, text: "+R$ 15 Milhões gerenciados" },
+  { icon: <Award className="h-6 w-6 text-primary/80" />, text: "2+ anos de mercado" },
   { icon: <Gem className="h-6 w-6 text-primary/80" />, text: "Metodologia Exclusiva" },
 ];
 
@@ -46,25 +45,25 @@ export function Founder() {
                   A MENTE POR TRÁS DA ESTRATÉGIA
                 </p>
                 <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold mt-2 text-white">
-                  Estratégia não é sorte, é Engenharia.
+                  Crescimento não é acaso. É método.
                 </h2>
             </MaskReveal>
 
             <FadeIn delay={200}>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-                Com foco em escala e performance quântica, <strong>André Peruzzato</strong> lidera a Quantix com uma visão clara: transformar dados frios em crescimento real. Não entregamos apenas tráfego, entregamos escala previsível.
+                Com foco em escala e performance, <strong>André Peruzzato</strong> lidera a Quantix com uma visão clara: transformar dados em decisões estratégicas e decisões em crescimento previsível.
               </p>
             </FadeIn>
 
             <FadeIn delay={300}>
                 <div className="mt-8">
-                    <p style={{ fontFamily: "'Dancing Script', cursive" }} className="text-4xl text-primary -mb-2">André Peruzzato</p>
+                    <p style={{ fontFamily: "'''Dancing Script''', cursive" }} className="text-4xl text-primary -mb-2">André Peruzzato</p>
                     <p className="text-sm font-light text-muted-foreground tracking-widest mt-1">CEO & FOUNDER</p>
                 </div>
             </FadeIn>
 
             <FadeIn delay={400}>
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {trustIcons.map((item, index) => (
                         <div key={index} className="flex items-center gap-4 p-4 bg-secondary/10 rounded-lg border border-border/20">
                             <div className="flex-shrink-0">

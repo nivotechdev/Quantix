@@ -31,7 +31,7 @@ function SubmitButton() {
   return (
     <Button type="submit" disabled={pending} className="w-full">
       {pending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-      Enviar Contato
+      Enviar contato
     </Button>
   );
 }
@@ -50,7 +50,7 @@ export function LeadFormDialog({ children }: { children: React.ReactNode }) {
       setOpen(false); // Close dialog on success
     } else if (state.type === 'error') {
       toast({
-        title: 'Erro no Formulário',
+        title: 'Erro no formulário',
         description: state.message,
         variant: 'destructive',
       });
@@ -72,12 +72,12 @@ export function LeadFormDialog({ children }: { children: React.ReactNode }) {
               {state.errors?.name && <p className="text-sm text-destructive">{state.errors.name[0]}</p>}
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="contact">E-mail ou Telefone</Label>
+              <Label htmlFor="contact">E-mail ou telefone</Label>
               <Input id="contact" name="contact" placeholder="seu@email.com ou (11) 99999-9999" />
               {state.errors?.contact && <p className="text-sm text-destructive">{state.errors.contact[0]}</p>}
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="message">Sua Mensagem</Label>
+              <Label htmlFor="message">Sua mensagem</Label>
               <Textarea id="message" name="message" placeholder="Conte-nos sobre seu desafio ou projeto." />
               {state.errors?.message && <p className="text-sm text-destructive">{state.errors.message[0]}</p>}
             </div>
@@ -85,7 +85,7 @@ export function LeadFormDialog({ children }: { children: React.ReactNode }) {
           <DialogFooter>
             <DialogClose asChild>
                 <Button type="button" variant="secondary">
-                    Cancelar
+                    cancelar
                 </Button>
             </DialogClose>
             <SubmitButton />
