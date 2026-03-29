@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Rocket, ShieldCheck, Zap } from "lucide-react";
 import { FadeIn } from "./FadeIn";
 
-const WHATSAPP_LINK_GROW = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20crescer%20meu%20neg%C3%B3cio%20com%20a%20Quantix.";
+const WHATSAPP_LINK_GROW = "https://wa.me/5554996455917";
 const GOOGLE_FORM_LINK = "https://forms.gle/21ZwGeZMEnyxWhh97";
 
 export function Cta() {

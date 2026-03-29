@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { MessageCircle, Rocket } from "lucide-react";
 import Link from 'next/link';
 
-const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20Quantix.";
+const WHATSAPP_LINK = "https://wa.me/555554996455917";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
